@@ -1,3 +1,7 @@
+use crossterm::event::read;
+
 fn main() {
-    println!("Hello, world!");
+    loop {
+        println!("{:?}", read().unwrap());
+    }
 }
